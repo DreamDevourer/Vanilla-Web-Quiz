@@ -11,6 +11,22 @@ Usually used to make CSS reset.
    v2.0 | 20110126
 */
 
+
+/* Initial setup */
+
+:root {
+  background-color: #ecf5ff;
+  font-size: 62.5%;
+}
+
+*{
+  box-sizing:border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -151,39 +167,23 @@ li {
   margin: 35px 0;
 }
 
-/* Start from here */
-
-#container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header  header"
-                         "article picture"
-                         "footer  picture";
-    width: 80%;
-    margin: 25px auto;
-    min-width: 550px;
-    
+/* FORMS */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header{
-    grid-area: header;
-    height: 40px;
-    display: flex;
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
 
-nav{
-    flex-grow: 1;
-}
-
-article{
-    grid-area: article;
-}
-
-picture{
-    grid-area: picture;
-    justify-self: end;
-}
-
-footer{
-    grid-area: footer;
+input::placeholder {
+  color: #aaa;
 }
