@@ -4,3 +4,9 @@ You are inside:
 1 - Settings
 It is where we declare the settings of our project, such as variables of measurements, colors, etc.
 */
+
+:root{
+  --mainColor: #56a5eb;
+  --mainTextColor: #333;
+  --mainBackground: #fcfcfc;
+}
