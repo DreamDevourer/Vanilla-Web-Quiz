@@ -74,7 +74,7 @@ table {
 /* typography set */
 
 html {
-  font-size: 16px;
+  font-size: var(--defaultFontP);
 }
 
 body {
@@ -96,45 +96,45 @@ h1,
 h2,
 h3,
 h4 {
-  color: #051f46;
+  color: var(--secondaryColor);
   font-family: Quicksand, sans-serif;
   margin: 10px 0;
 }
 
 h5,
 h6 {
-  color: #051f46;
+  color: var(--secondaryColor);
   font-family: Quicksand, sans-serif;
   margin: 0;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: var(--defaultH1);
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3.75rem;
+  font-size: var(--defaultH2);
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.875rem;
+  font-size: var(--defaultH3);
   font-weight: 700;
 }
 
 h4 {
-  font-size: 1.625rem;
+  font-size: var(--defaultH4);
   font-weight: 700;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: var(--defaultH5);
 }
 
 h6 {
-  color: #9ea1a6;
-  font-size: 1.25rem;
+  color: var(--defaultHeading6Color);
+  font-size: var(--defaultH6);
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -156,7 +156,7 @@ blockquote {
 
 ul,
 ol {
-  color: #051f46;
+  color: var(--secondaryColor);
   font-weight: 300;
 }
 
@@ -182,5 +182,5 @@ input {
 }
 
 input::placeholder {
-  color: #aaa;
+  color: var(--defaultHeading6Color);
 }

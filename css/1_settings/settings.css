@@ -7,6 +7,19 @@ It is where we declare the settings of our project, such as variables of measure
 
 :root{
   --mainColor: #56a5eb;
+  --secondaryColor: #051f46;
   --mainTextColor: #333;
   --mainBackground: #fcfcfc;
+
+  /* Color used on Heading 6 and other misc places */
+  --defaultHeading6Color: #9ea1a6;
+
+  --defaultFontP: 1rem;
+  --defaultH1: 5rem;
+  --defaultH2: 3.75rem;
+  --defaultH3: 1.875rem;
+  --defaultH4: 1.45rem;
+  --defaultH5: 1.2rem;
+  --defaultH6: 1.15;
+
 }
