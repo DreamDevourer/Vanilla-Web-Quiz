@@ -6,16 +6,23 @@ It is where we declare the settings of our project, such as variables of measure
 */
 
 :root{
-  --mainColor: #56a5eb;
-  --secondaryColor: #051f46;
-  --mainTextColor: #333;
-  --mainBackground: #fcfcfc;
+  --mainColor: #f5834e;
+  --secondaryColor: #fff;
+  --mainTextColor: #fff;
+  --mainBackground: #282C34;
+  --secondaryBackground: #343943;
+  --backgroundHighlight: #A9B2BE;
+
+  --correctAnswer: #6ce098;
+  --wrongAnswer: #E06C74;
+
+  --allShadows: rgba(0, 0, 0, 0.2);
 
   /* Color used on Heading 6 and other misc places */
   --defaultHeading6Color: #9ea1a6;
 
   --defaultFontP: 1rem;
-  --defaultH1: 5rem;
+  --defaultH1: 4rem;
   --defaultH2: 3.75rem;
   --defaultH3: 1.875rem;
   --defaultH4: 1.45rem;

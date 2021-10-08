@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vanilla Web Quiz | Nick</title>
-  <meta name="description" content="Simple and clean to use web application for your quiz.">
-  <meta name="robots" content="index">
-  <meta name="keywords" content="quiz, vanilla, app, html, javascript, css">
-  <link rel="shortcut icon" type='image/x-icon' href="./img/favicon.ico">
-  <!-- OpenGraph Meta tags -->
-  <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="https://www.website.com/home">
-  <meta property="og:title" content="Vanilla Web Quiz | Nick">
-  <meta property="og:site_name" content="Vanilla Web Quiz | Nick">
-  <meta property="og:description" content="Simple and clean to use web application for your quiz.">
-  <meta property="og:type" content="website">
-  <!-- OpenGraph Icon tags-->
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="800">
-  <meta property="og:image:height" content="600">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Web Quiz | Nick</title>
+    <meta name="description" content="Simple and clean to use web application for your quiz.">
+    <meta name="robots" content="index">
+    <meta name="keywords" content="quiz, vanilla, app, html, javascript, css">
+    <link rel="shortcut icon" type='image/x-icon' href="./img/favicon.ico">
+    <!-- OpenGraph Meta tags -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://www.website.com/home">
+    <meta property="og:title" content="Vanilla Web Quiz | Nick">
+    <meta property="og:site_name" content="Vanilla Web Quiz | Nick">
+    <meta property="og:description" content="Simple and clean to use web application for your quiz.">
+    <meta property="og:type" content="website">
+    <!-- OpenGraph Icon tags-->
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
 
-  <!-- Other possibilities
+    <!-- Other possibilities
     <meta property="og:type" content="article">
     <meta property="article:author" content="reidark">
     <meta property="article:section" content="Tutorials">
@@ -30,27 +30,65 @@
     <meta property="article:published_time" content="date_time">
     -->
 
-  <!-- Loading Styles -->
-  <link rel="stylesheet" href="./css/style.css">
+    <!-- Loading Styles -->
+    <link rel="stylesheet" href="./css/style.css">
 
 
-</head>
+  </head>
 
-<header>
-</header>
+  <header>
+  </header>
 
-<body>
-  <!-- Main Content Here -->
-  <main>
-    <section class="container">
+  <body>
+    <main>
+      <!-- Main Content Here -->
+      <div class="container">
+        <div id="loader"></div>
+        <section>
+          <div id="game" class="justify-center flex-column hidden">
+            <div id="hud">
+              <div id="hud-item">
+                <p id="progressText" class="hud-prefix">
+                  Question
+                </p>
+                <div id="progressBar">
+                  <div id="progressBarFull"></div>
+                </div>
+              </div>
+              <div id="hud-item">
+                <p class="hud-prefix">
+                  Score
+                </p>
+                <h1 class="hud-main-text" id="score">
+                  0
+                </h1>
+              </div>
+            </div>
+            <h2 id="question"></h2>
+            <div class="choice-container">
+              <p class="choice-prefix">A</p>
+              <p class="choice-text" data-number="1"></p>
+            </div>
+            <div class="choice-container">
+              <p class="choice-prefix">B</p>
+              <p class="choice-text" data-number="2"></p>
+            </div>
+            <div class="choice-container">
+              <p class="choice-prefix">C</p>
+              <p class="choice-text" data-number="3"></p>
+            </div>
+            <div class="choice-container">
+              <p class="choice-prefix">D</p>
+              <p class="choice-text" data-number="4"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 
-    </section>
-  </main>
-
-</body>
-
-<footer>
-  <script defer src="./js/main.js"></script>
-</footer>
+  <footer>
+    <script defer src="./js/main.js"></script>
+  </footer>
 
 </html>
